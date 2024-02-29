@@ -9,13 +9,13 @@
     <div>
         <h1>Calcular!</h1>
         Digite o primeiro numero
-        <input id="num1" name="nome" value="" type="number">
+        <input id="num1" name="num1" value="" type="text">
 
         Digite o segundo numero
-        <input id="num2" name="nome" value="" type="number">
+        <input id="num2" name="num2" value="" type="text">
     </div>
     <div>
-        <button id="botao1">Multiplicar</button>
+        <button id="botao1" onclick="multi()">Multiplicar</button>
         <button id="botao2" onclick="divid()">Dividir</button>
         <button id="botao3" onclick="soma()">Somar</button>
         <button id="botao4" onclick="sub()">Subtrair</button>
@@ -24,6 +24,6 @@
         <p>O numero é:<span id="resultado"></span></p>
     </div>
 
-
+    <script src="calculadora.js"></script>
 </body>
 </html>

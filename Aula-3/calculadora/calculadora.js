@@ -1,16 +1,35 @@
 const resultado = document.getElementById('resultado')
 const vranumerin1 = document.getElementById('num1')
 const vranumerin2 = document.getElementById('num2')
-const multico = document.getElementById('botao1')
-var num1 = 0
-var num2 = 0
 
-function multip(){
+function multi(){
     num1 = Number(vranumerin1.value)
     num2 = Number(vranumerin2.value)
-    var multi = (num1 * num2)
-    console.log('multi', multi)
-    resultado.innerHTML = multi
+    var mult = num1 * num2
+    console.log(mult)
+    resultado.innerHTML = mult
 }
 
-multico.addEventListener('click',multip)
+function divid(){
+    num1 = Number(vranumerin1.value)
+    num2 = Number(vranumerin2.value)
+    var divi = num1 / num2
+    console.log(divi)
+    resultado.innerHTML = divi
+}
+
+function soma(){
+    num1 = Number(vranumerin1.value)
+    num2 = Number(vranumerin2.value)
+    var somar = num1 + num2
+    console.log(somar)
+    resultado.innerHTML = somar
+}
+
+function sub(){
+    num1 = Number(vranumerin1.value)
+    num2 = Number(vranumerin2.value)
+    var subi = num1 - num2
+    console.log(subi)
+    resultado.innerHTML = subi
+}
