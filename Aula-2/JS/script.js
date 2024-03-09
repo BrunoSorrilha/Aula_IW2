@@ -36,19 +36,23 @@ function lampConcerta(){
     }
 
 }
+
+function estaDesligada(){
+    return lampada.src.indexOf('desligada') > -1
+    //isso retorna True ou False
+}
+
 function testando(){
     if (!estaQuebrada()){
-        if (lampada.src = "img/ligada.jpg" ) {
-            lampada.src = "img/desligada.jpg"
-            texto.innerHTML = "DESLIGADA"
-        } 
-        if (lampada.src = "img/desligada.jpg" ) {
+        if (estaDesligada()){
             lampada.src = "img/ligada.jpg"
-            texto.innerHTML = "LIGADA"
-          } else {
-            //  block of code to be executed if the condition1 is false and condition2 is false
-          }
-    }
+            texto.innerHTML = 'A Lampada está ligada'
+        }
+         else{
+            lampada.src = "img/desligada.jpg"
+            texto.innerHTML = 'A Lampada está desligada'
+        }
+}
 }
 
 
