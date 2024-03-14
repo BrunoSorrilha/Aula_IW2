@@ -14,35 +14,34 @@ function juberto(){
 
     if (coco == false){
         if (peido < 18.5) {
-            return "Abaixo do peso";
+            diag.innerHTML = "Abaixo do peso";
         } else if (peido >= 18.5 && peido < 24.9) {
-        return "Peso normal";
+            diag.innerHTML = "Peso normal";
         } else if (peido >= 25 && peido < 29.9) {
-            return "Sobrepeso";
+            diag.innerHTML =  "Sobrepeso";
         } else if (peido >= 30 && peido < 34.9) {
-            return "Obesidade grau 1";
+            diag.innerHTML =  "Obesidade grau 1";
         } else if (peido >= 35 && peido < 39.9) {
-            return "Obesidade grau 2";
+            diag.innerHTML =  "Obesidade grau 2";
         } else {
-           return "Obesidade grau 3";
+            diag.innerHTML =  "Obesidade grau 3";
         }
     }
     if (coco == true) {
-        if (peido < 18.5) {
-            return "Abaixo do peso";
-        } else if (peido >= 18.5 && peido < 24.9) {
-            return "Peso normal";
-        } else if (peido >= 25 && peido < 29.9) {
-            return "Sobrepeso";
-        } else if (peido >= 30 && peido < 34.9) {
-            return "Obesidade grau 1";
-        } else if (peido >= 35 && peido < 39.9) {
-            return "Obesidade grau 2";
+        if (peido < 19.5) {
+            diag.innerHTML =  "Abaixo do peso";
+        } else if (peido >= 19.5 && peido < 25.9) {
+            diag.innerHTML =  "Peso normal";
+        } else if (peido >= 26 && peido < 30.9) {
+            diag.innerHTML =  "Sobrepeso";
+        } else if (peido >= 31 && peido < 35.9) {
+            diag.innerHTML =  "Obesidade grau 1";
+        } else if (peido >= 36 && peido < 40.9) {
+            diag.innerHTML =  "Obesidade grau 2";
         } else {
-            return "Obesidade grau 3";
+            diag.innerHTML =  "Obesidade grau 3";
         }
     }
-    diag.innerHTML = coco
     console.log(coco)
     
 }
