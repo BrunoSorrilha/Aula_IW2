@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interagindo com o usuario</h1>
+    <p id="cor">Esse texto recebera a cor abaixo</p>
+    <button id="homo" onclick="inicio1()" value="1">vermelho</button>
+    <button id="sexu" onclick="inicio2()" value="2">azul</button>
+    <button id="al" onclick="inicio3()" value="3">verde</button>
+    <p id="coco"></p>
+
+
+    <script>
+        //alert('Minha primeira mensagem!')
+        //prompt('Digite seu nome: ')
+        //confirm('Deseja realmente sair')
+
+        var cor = document.getElementById("cor")
+
+     function inicio1(){
+        coco.innerHTML = "Voce clicou no botão 1"
+        cor.style.color = "red"
+     }
+     function inicio2(){
+        coco.innerHTML = "Voce clicou no botão 2"
+        cor.style.color = "blue"
+    }
+    function inicio3(){
+        coco.innerHTML = "Voce clicou no botão 3"
+        cor.style.color = "green"
+    }
+    </script>
+</body>
+</html>

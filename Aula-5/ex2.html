@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interagindo com o usuario</h1>
+    <button id="homo" onclick="inicio()">Clique para começar</button>
+    <p id="coco"></p>
+    <script>
+        //alert('Minha primeira mensagem!')
+        //prompt('Digite seu nome: ')
+        //confirm('Deseja realmente sair')
+     function inicio(){
+        var nome = prompt('Digite seu nome: ')
+            console.log('O nome é: ' + nome)
+            coco.innerHTML = "Olá," + nome + "! Prazer em te conhecer!"
+     }
+    </script>
+</body>
+</html>
