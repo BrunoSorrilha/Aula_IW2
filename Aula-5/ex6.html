@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Interagindo com o usuario</h1>
+    <h1>NAO FINALIZADO</h1>
+    <button id="homo" onclick="inicio1()" value="1">Comprar!</button>
+    <p id="coco"></p>
+    <p id="bunda"></p>
+    <p id="tolete"></p>
+
+
+    <script>
+        //alert('Minha primeira mensagem!')
+        //prompt('Digite seu nome: ')
+        //confirm('Deseja realmente sair')
+
+     function inicio1(){
+        var nome = prompt('Digite nome do funcionario: ')
+        var preco = prompt('Qual o salario de ' + nome + '?')
+        var valor = prompt('Valor recebido: ')
+        var troco = (valor - preco)
+        coco.innerHTML = ('O seu ' + nome + ' custará ' + preco + ' reais')
+        bunda.innerHTML = ('Voce deu: ' + valor + ' reais')
+        tolete.innerHTML = ('Seu troco é ' + troco + ' reais')
+
+     }
+    </script>
+</body>
+</html>
