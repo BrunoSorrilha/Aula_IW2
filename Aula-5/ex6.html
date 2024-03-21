@@ -7,8 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Interagindo com o usuario</h1>
-    <h1>NAO FINALIZADO</h1>
+    <h1>Calculadora de troco</h1>
     <button id="homo" onclick="inicio1()" value="1">Comprar!</button>
     <p id="coco"></p>
     <p id="bunda"></p>
@@ -21,13 +20,13 @@
         //confirm('Deseja realmente sair')
 
      function inicio1(){
-        var nome = prompt('Digite nome do funcionario: ')
-        var preco = prompt('Qual o salario de ' + nome + '?')
-        var valor = prompt('Valor recebido: ')
+        var nome = prompt('Informe o nome do produto: ')
+        var preco = prompt('informe o valor de ' + nome + ' em R$')
+        var valor = prompt('informe o valor recebido: ')
         var troco = (valor - preco)
-        coco.innerHTML = ('O seu ' + nome + ' custará ' + preco + ' reais')
+        coco.innerHTML = ('Voce irá comprar ' + nome + ' por ' + preco + ' reais')
         bunda.innerHTML = ('Voce deu: ' + valor + ' reais')
-        tolete.innerHTML = ('Seu troco é ' + troco + ' reais')
+        tolete.innerHTML = ('Seu troco é de ' + troco + ' reais')
 
      }
     </script>

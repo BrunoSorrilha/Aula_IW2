@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Resolvendo Bhaskara</h1>
+    <button id="homo" onclick="inicio1()" value="1">Calcular!</button>
+    <p>Considerando uma equação no formato: Ax^2 + Bx + C = 0.</p>
+    <p>Aperte o botão acima para calcular Δ</p>
+    <p id="coco"></p>
+    <p id="bunda"></p>
+    <p id="tolete"></p>
+
+
+    <script>
+        //alert('Minha primeira mensagem!')
+        //prompt('Digite seu nome: ')
+        //confirm('Deseja realmente sair')
+
+     function inicio1(){
+        var A = prompt('Qual o valor de A?')
+        var B = prompt('Qual o valor de B?')
+        var C = prompt('Qual o valor de C?')
+        var del = (B ** 2 - 4 * A * C)
+        console.log(del)
+        if (del >= 0) {
+            coco.innerHTML = ('A equação atual é: ' + A + 'x^2 + ' + B + 'x + ' + C + '= 0')
+            bunda.innerHTML = ('O calculo realizado será: Δ = ' + B + '^2 - 4 . ' + A + ' . ' + C )
+            tolete.innerHTML = ('O Δ será de: ' + del)
+        } 
+        else{
+            coco.innerHTML = ('Δ não existe nesse caso! D:')
+        }
+     }
+    </script>
+</body>
+</html>

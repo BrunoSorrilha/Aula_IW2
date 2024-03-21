@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reajuste salarial</h1>
+    <button id="homo" onclick="inicio1()" value="1">Reajuste seu salario</button>
+    <p id="coco"></p>
+    <p id="bunda"></p>
+    <p id="tolete"></p>
+
+
+    <script>
+        //alert('Minha primeira mensagem!')
+        //prompt('Digite seu nome: ')
+        //confirm('Deseja realmente sair')
+
+     function inicio1(){
+        var nome = prompt('Qual o nome do funcionario? ')
+        var preco = Number(prompt('Qual o salario de ' + nome + '?'))
+        var valor = Number(prompt('O salario de ' + nome + ' irá ser reajustado em qual porcentagem?'))
+        var aumento = (preco * valor / 100)
+        var total = (preco + aumento * 1)
+        console.log(aumento)
+        coco.innerHTML = ('O salario atual era de: ' + preco + ' reais')
+        bunda.innerHTML = ('Com um aumento de: ' + valor + '%, o salario irá aumentar em ' + aumento + ' a partir do proximo mes')
+        tolete.innerHTML = ('Seu salario total então, se tornará: ' + total + ' reais')
+        
+
+     }
+    </script>
+</body>
+</html>
