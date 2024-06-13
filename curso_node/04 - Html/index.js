@@ -7,11 +7,11 @@ const app = express()
 // seu programa....
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname  + "/paginas/sobre.html")
+    res.sendFile(__dirname + "/paginas/index.html")
 })
 
 app.get("/sobre",function(req,res){
-    res.send("Pagina Sobre")
+    res.sendFile(__dirname + "/paginas/sobre.html")
 })
 
 app.get("/blog",function(req,res){

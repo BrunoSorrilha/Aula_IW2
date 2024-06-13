@@ -1,4 +1,4 @@
-var multiplicar = function multiplicar(a,b){
+var multiplicar = function(a,b){
     return a*b
 }
 

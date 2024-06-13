@@ -1,4 +1,4 @@
-var subtrair = function subtrair(a,b){
+var subtrair = function(a,b){
     return a-b
 }
 

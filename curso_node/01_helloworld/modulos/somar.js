@@ -1,4 +1,4 @@
-var somar = function somar(a,b){
+var somar = function(a,b){
     return a+b
 }
 
